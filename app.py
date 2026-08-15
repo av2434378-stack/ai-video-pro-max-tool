@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return """
-    <h1>AI Video Pro MAX</h1>
-    <p>✅ Website Live hai</p>
-    <p>Ab AI Video + Voice + Payment add hoga</p>
-    """
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
