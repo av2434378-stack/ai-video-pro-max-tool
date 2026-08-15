@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Video Pro MAX Tool</title>
     <style>
-        body {font-family: Arial; text-align: center; padding: 50px; background: #0f0f0f; color: white;}
-        h1 {color: #ff0000;}
-        input {padding: 12px; width: 70%; border-radius: 8px; border: none; margin: 10px;}
-        button {padding: 12px 25px; background: #ff0000; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;}
-        button:hover {background: #cc0000;}
+        body { font-family: Arial; background: #0f172a; color: white; text-align: center; padding: 50px; }
+        h1 { color: #22d3ee; font-size: 32px; }
+        .box { background: #1e293b; padding: 30px; border-radius: 15px; width: 90%; max-width: 500px; margin: 20px auto; }
+        input { padding: 12px; width: 70%; border-radius: 8px; border: none; margin-right: 10px; }
+        button { padding: 12px 20px; background: #22d3ee; color: black; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
     </style>
 </head>
 <body>
     <h1>🔥 AI Video Pro MAX Tool</h1>
-    <p>YouTube Link Yaha Paste Karo</p>
-    <form method="POST" action="/generate">
-        <input type="text" name="url" placeholder="https://youtube.com/watch?v=..." required>
-        <br>
-        <button type="submit">Generate Video</button>
-    </form>
+    <div class="box">
+        <p><b>YouTube Link Yaha Paste Karo</b></p>
+        <form method="POST" action="/generate">
+            <input type="text" name="url" placeholder="https://youtube.com/watch?v=...">
+            <button type="submit">Generate Video</button>
+        </form>
+    </div>
 </body>
 </html>
